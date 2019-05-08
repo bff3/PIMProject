@@ -1,0 +1,10 @@
+[Unit]
+Description=run blindspot recieving software
+After=network.target
+
+[Service]
+ExecStart=/home/alarm/BS_client.py
+User=root
+
+[Install]
+WantedBy=default.target

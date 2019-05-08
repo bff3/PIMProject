@@ -1,0 +1,10 @@
+[Unit]
+Description=Start sensor server
+
+[Service]
+ExecStartPre=/bin/sleep 1
+ExecStart=/usr/bin/sensor_server
+User=root
+
+[Install]
+WantedBy=default.target
